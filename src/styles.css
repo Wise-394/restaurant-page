@@ -1,25 +1,77 @@
+:root {
+  --primary-color: orange;
+  --text-color: white;
+}
 * {
   box-sizing: border-box;
   ;
   padding: 0;
   margin: 0;
 }
-body{
-  padding: 0 5%;
-}
-nav {
-  display: flex;
-  gap: 1%;
-  height: 10vh;
-  align-items: center;
+
+body {
+  min-height: 100vh;
+  background-image: url("../assets/img/restaurant-bg.jpg");
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--text-color)
 }
 
-#home {
+nav {
+  padding: 0 5%;
+  display: flex;
+  gap: 3%;
+  height: 10vh;
+  align-items: center;
+  font-size: 3rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+nav > button {
+  background-color: transparent;
+  color: var(--text-color);
+  border: 0;
+  font-size: 1.2rem;
+}
+
+nav > button:hover {
+  border-bottom: var(--primary-color) 5px solid;
+}
+nav > #home {
   margin-left: auto;
 }
 
-/* home */
-.home-container {
+#content {
+  padding: 0 5%;
+  min-height: 90vh;
+}
+
+.home {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+
+.hero-card {
+  padding: 5%;
+  width: 90%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-card>p:first-child {
+  font-size: 3rem;
+}
+.cta {
+  padding: 10%;
+  width: 200px;
+  border: 0;
+  background-color: var(--primary-color);
+  font-size: 1.2rem;
+  border-radius: 10px;
+  font-weight: bold;
 }
