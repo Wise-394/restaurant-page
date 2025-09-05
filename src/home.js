@@ -46,7 +46,7 @@ export function homeInit(container) {
         container.appendChild(ctaDiv);
         const ctaButton = document.createElement("button");
         ctaButton.textContent = "order now"
-        ctaButton.className = "cta"
+        ctaButton.className = "cta button"
         ctaDiv.appendChild(ctaButton);
     })()
 

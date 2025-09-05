@@ -1,8 +1,9 @@
 import "./styles.css";
 import { homeInit } from './home.js';
 import { menuInit } from "./menu.js";
+import { aboutInit } from "./about.js";
 const contentDiv = document.querySelector("#content");
-
+const body = document.querySelector("body");
 const menuButton = document.querySelector("#menu");
 menuButton.addEventListener("click", () => switchTab("menu"));
 
@@ -19,15 +20,18 @@ function switchTab(tab) {
     switch (tab) {
         case "home":
             contentDiv.className = "home";
+            body.className = "home-bg"
             homeInit(contentDiv);
             break;
         case "menu":
             contentDiv.className = "menu";
+            body.className = "menu-bg"
             menuInit(contentDiv);
             break;
         case "about":
             contentDiv.className = "about";
-            menuInit(contentDiv);
+            body.className = "home-bg"
+            aboutInit(contentDiv);
             break;
     }
 
@@ -35,7 +39,7 @@ function switchTab(tab) {
         contentDiv.innerHTML = "";
     }
 }
-(function onPageStart(){
+(function onPageStart() {
     switchTab("home")
 }
 )();
