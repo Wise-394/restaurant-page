@@ -30,7 +30,7 @@ function switchTab(tab) {
             break;
         case "about":
             contentDiv.className = "about";
-            body.className = "home-bg"
+            body.className = "about-bg"
             aboutInit(contentDiv);
             break;
     }
