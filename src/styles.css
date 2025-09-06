@@ -5,6 +5,14 @@
   --secondary-font-family: 'Raleway', Arial, Helvetica, sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: orange;
+}
+
 * {
   box-sizing: border-box;
   ;
@@ -23,8 +31,6 @@ button {
   font-family: var(--main-font-family);
 }
 
-
-
 .home-bg {
   background-image: url("../assets/img/restaurant-bg.jpg");
   background-origin: border-box;
@@ -40,8 +46,9 @@ button {
   background-size: cover;
   color: var(--text-color)
 }
+
 .about-bg {
-    background-image: url("../assets/img/restaurant-bg1.jpg");
+  background-image: url("../assets/img/restaurant-bg1.jpg");
   background-origin: border-box;
   background-repeat: no-repeat;
   background-size: cover;
@@ -94,8 +101,9 @@ nav>#home {
 }
 
 .hero-card {
+  margin: 1%;
   padding: 5%;
-  width: 90%;
+  max-width: 90%;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.7);
   font-size: 1.2rem;
@@ -108,11 +116,12 @@ nav>#home {
   font-size: 4rem;
   font-family: var(--main-font-family);
 }
-.hero-card > ul {
+
+.hero-card>ul {
   list-style-type: "> ";
   display: flex;
   flex-direction: column;
-  gap:10px
+  gap: 10px
 }
 
 .button {
@@ -165,7 +174,8 @@ nav>#home {
   max-height: 220px;
   border-radius: 10px;
 }
-.card > p:first-of-type{
+
+.card>p:first-of-type {
   font-family: var(--main-font-family);
   font-size: 1.5rem;
 }
@@ -201,4 +211,68 @@ nav>#home {
   display: flex;
   flex-direction: column;
   gap: 10px
+}
+
+/* footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* pushes first div left, last div right */
+  height: 10vh;
+  background-color: var(--primary-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0 2%;
+  margin-top: 2%;
+  text-align: center;
+}
+
+footer>div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+footer img {
+  width: clamp(24px, 5vw, 45px);
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 480px) {
+  nav {
+    font-size: 2rem;
+  }
+
+  .home {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+  }
+
+  footer>div {
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer>div:last-child {
+    margin-left: 0;
+  }
 }
