@@ -31,7 +31,8 @@ This project demonstrates **DOM manipulation**, **modular JavaScript**, and **We
   <tr>
     <td><img width="600" alt="Desktop 1" src="https://github.com/user-attachments/assets/454ab931-c98b-437a-9d11-f7e036b9c67e" /></td>
     <td><img width="600" alt="Desktop 2" src="https://github.com/user-attachments/assets/d91672b0-3826-49ed-95d5-2175fca6468e" /></td>
-    <td><img width="600" alt="Desktop 3" src="https://github.com/user-attachments/assets/18fbc1f8-f8df-4380-95ad-2893f7021e0b" /></td>
+    <td><img width="600" alt="desktop 4" src="https://github.com/user-attachments/assets/814d5aa7-1447-40ca-a14f-1342a02d1872" /></td>
+
   </tr>
 </table>
 
